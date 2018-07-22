@@ -1,11 +1,16 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      About
+      Riwayat Hasil
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-
+	<ion-list *ngFor="let his of history">
+		<ion-item>
+			<ion-label>{{ his }}</ion-label>
+		</ion-item>
+	</ion-list>
+	<button ion-button color="primary" block (click)="clearHistory()">Clear History</button>
 </ion-content>

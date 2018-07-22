@@ -7,8 +7,9 @@ import { NavController } from 'ionic-angular';
 })
 export class ContactPage {
 
+  contactUs:Array<any>;
   constructor(public navCtrl: NavController) {
-
+  	this.contactUs = ['andresuntoro', 'rifky_darma', 'dalang_sato'];
   }
 
 }

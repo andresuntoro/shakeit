@@ -8,10 +8,10 @@
 
 <ion-content>
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
+    <ion-list-header>Follow us on Instagram</ion-list-header>
+    <ion-item *ngFor="let con of contactUs">
+      <ion-icon name="logo-instagram" item-start></ion-icon>
+      {{con}}
     </ion-item>
   </ion-list>
 </ion-content>
